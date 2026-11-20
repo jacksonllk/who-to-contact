@@ -9,7 +9,15 @@
     <a href="#build-on-it">Build on it</a>
   </p>
 
-[![Built with context.dev](https://img.shields.io/badge/built%20with-context.dev-2563eb)](https://context.dev/?utm_source=who-to-contact&utm_medium=readme&utm_campaign=open-source)
+<p>
+  <a href="https://context.dev/?utm_source=who-to-contact&utm_medium=readme&utm_campaign=open-source">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/powered-by-context-dark.png" />
+      <img src=".github/assets/powered-by-context-light.png" height="44" alt="Powered by Context.dev" />
+    </picture>
+  </a>
+</p>
+
 [![MIT licence](https://img.shields.io/badge/licence-MIT-green)](LICENSE)
 
 </div>
@@ -38,7 +46,7 @@ who are the engineering leaders at example.com? include their X accounts
 
 ## Get started
 
-1. **Sign up** for a free [Context.dev account](https://www.context.dev/dashboard/api-keys). It includes 1,000 credits a month.
+1. **Sign up** for a free [Context.dev account](https://www.context.dev/dashboard/api-keys?utm_source=who-to-contact&utm_medium=readme&utm_campaign=open-source). It includes 1,000 credits a month.
 2. **Install the skill** in your project:
 
 ```bash
@@ -158,3 +166,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+---
+
+<p align="center">
+  <sub>Made by <a href="https://github.com/jacksonllk">@jacksonllk</a> (<a href="https://x.com/jackson_llk">X</a>)</sub>
+</p>
