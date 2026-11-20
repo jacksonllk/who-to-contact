@@ -1,0 +1,274 @@
+{
+  "about": "Trigger eval for the who-to-contact skill: does the agent load the skill for these requests? Method: agentskills.io 'Optimizing skill descriptions' (about 20 queries, 3 runs each, a fixed train and validation split). Run with the Context.dev server disconnected, so a run that loads the skill stops at setup and spends no credits.",
+  "queries": [
+    {
+      "id": 1,
+      "split": "train",
+      "should_trigger": true,
+      "query": "who should I pitch at linear.app? we sell a feature flag tool"
+    },
+    {
+      "id": 2,
+      "split": "train",
+      "should_trigger": true,
+      "query": "need the VP Sales and head of SDRs at gong.io, linkedin links pls"
+    },
+    {
+      "id": 3,
+      "split": "train",
+      "should_trigger": true,
+      "query": "My manager wants finance leaders at our top 40 accounts, domains are in q1_targets.csv"
+    },
+    {
+      "id": 4,
+      "split": "train",
+      "should_trigger": true,
+      "query": "find decision makers @ ramp.com"
+    },
+    {
+      "id": 5,
+      "split": "train",
+      "should_trigger": true,
+      "query": "I'm cold emailing Notion about our HR software. Who would I even address it to?"
+    },
+    {
+      "id": 6,
+      "split": "train",
+      "should_trigger": true,
+      "query": "Who owns SOC 2 at drata.com? Building an outbound list for our compliance tool."
+    },
+    {
+      "id": 7,
+      "split": "validation",
+      "should_trigger": true,
+      "query": "who should I contact at stripe.com? marketing leaders"
+    },
+    {
+      "id": 8,
+      "split": "validation",
+      "should_trigger": true,
+      "query": "who runs engineering at vercel.com"
+    },
+    {
+      "id": 9,
+      "split": "validation",
+      "should_trigger": true,
+      "query": "get me the email of the head of marketing at figma.com"
+    },
+    {
+      "id": 10,
+      "split": "validation",
+      "should_trigger": true,
+      "query": "leads at these companies please: plausible.io, resend.com, posthog.com"
+    },
+    {
+      "id": 21,
+      "split": "validation",
+      "should_trigger": true,
+      "query": "what's the phone number of the CFO at brex.com?"
+    },
+    {
+      "id": 11,
+      "split": "train",
+      "should_trigger": false,
+      "query": "mcp login context keeps failing with a 401 in Codex, how do I re-auth the Context.dev server?",
+      "acceptable_if_loaded": "Loading is fine when the skill answers from references/setup.md and runs no search (SKILL.md scope rule)."
+    },
+    {
+      "id": 12,
+      "split": "train",
+      "should_trigger": false,
+      "query": "Write a cold email to the head of marketing at Figma, her name is Dana Lee"
+    },
+    {
+      "id": 13,
+      "split": "train",
+      "should_trigger": false,
+      "query": "Find 50 Series A fintech companies in Europe for my target list"
+    },
+    {
+      "id": 14,
+      "split": "train",
+      "should_trigger": false,
+      "query": "What's the latest funding news for ramp.com?"
+    },
+    {
+      "id": 15,
+      "split": "train",
+      "should_trigger": false,
+      "query": "Import these LinkedIn URLs from contacts.csv into HubSpot"
+    },
+    {
+      "id": 16,
+      "split": "train",
+      "should_trigger": false,
+      "query": "mcp login context"
+    },
+    {
+      "id": 17,
+      "split": "validation",
+      "should_trigger": false,
+      "query": "scrape stripe.com/pricing and summarise the plans"
+    },
+    {
+      "id": 18,
+      "split": "validation",
+      "should_trigger": false,
+      "query": "who are stripe's main competitors?"
+    },
+    {
+      "id": 19,
+      "split": "validation",
+      "should_trigger": false,
+      "query": "add a contact form to our website that emails sales@ourco.com"
+    },
+    {
+      "id": 20,
+      "split": "validation",
+      "should_trigger": false,
+      "query": "how many employees does notion have?"
+    },
+    {
+      "id": 22,
+      "split": "train",
+      "should_trigger": true,
+      "query": "Find the VP of Engineering at Stripe.",
+      "based_on": "Lusha, verbatim: \"Find the VP of Engineering at Stripe.\" https://docs.lusha.com/mcp/examples.md"
+    },
+    {
+      "id": 23,
+      "split": "train",
+      "should_trigger": true,
+      "query": "Who are the marketing leaders at Hootsuite? I want their names and verified work emails.",
+      "based_on": "Apollo (unverified wording): \"Who are the marketing leaders at Hootsuite? I want their names and verified work emails if Apollo has it.\" https://www.apollo.io/magazine/the-top-10-use-cases-of-apollo-mcp-based-on-42k-queries"
+    },
+    {
+      "id": 24,
+      "split": "train",
+      "should_trigger": true,
+      "query": "Who should I reach out to at Snowflake for a prospecting motion?",
+      "based_on": "gtm.ai, verbatim. https://gtm.ai/guides/how-to-audience-building-in-claude"
+    },
+    {
+      "id": 25,
+      "split": "train",
+      "should_trigger": true,
+      "query": "Find everyone in revenue leadership at Deel",
+      "based_on": "Amplemarket: \"Find everyone in revenue leadership at Deel and add them to the account list\" https://www.amplemarket.com/mcp/prompts"
+    },
+    {
+      "id": 26,
+      "split": "train",
+      "should_trigger": true,
+      "query": "I have a list of target accounts: stripe.com, notion.so, and figma.com. For each one, find director-level and above contacts in Sales or Marketing, and show me their titles.",
+      "based_on": "Lusha, verbatim. https://docs.lusha.com/mcp/examples.md"
+    },
+    {
+      "id": 27,
+      "split": "train",
+      "should_trigger": true,
+      "query": "Map the buying committee at ramp.com for a spend management decision.",
+      "based_on": "ZoomInfo: \"Map the buying committee at [company] for a [product category] decision.\" https://pipeline.zoominfo.com/sales/claude-mcp-for-sales-prospecting"
+    },
+    {
+      "id": 28,
+      "split": "validation",
+      "should_trigger": true,
+      "query": "Find VP- and Director-level RevOps leaders at gong.io who started in the last 9 months.",
+      "based_on": "Clay: \"Find VP- and Director-level RevOps leaders at [Company] who started in the last 9 months.\" https://university.clay.com/docs/using-clay-in-claude"
+    },
+    {
+      "id": 29,
+      "split": "validation",
+      "should_trigger": true,
+      "query": "Who at Amazon looks like the VP of Data Engineering I sold to at Netflix?",
+      "based_on": "gtm.ai, verbatim. https://gtm.ai/guides/how-to-audience-building-in-claude"
+    },
+    {
+      "id": 30,
+      "split": "validation",
+      "should_trigger": true,
+      "query": "Find engineering managers at Stripe",
+      "based_on": "OneWave contact-hunter, verbatim. https://github.com/OneWave-AI/claude-skills/blob/HEAD/contact-hunter/SKILL.md"
+    },
+    {
+      "id": 31,
+      "split": "train",
+      "should_trigger": false,
+      "query": "Who is John Smith at Datadog?",
+      "based_on": "Lusha, verbatim. Routed to enrichment by Lusha, Apollo, Anthropic and Firecrawl. https://docs.lusha.com/user-guide/mcp/how-to-use-the-lusha-plugin-for-claude"
+    },
+    {
+      "id": 32,
+      "split": "train",
+      "should_trigger": false,
+      "query": "How many people does Snowflake have in their data engineering and analytics functions?",
+      "based_on": "Apollo (unverified wording). https://www.apollo.io/magazine/the-top-10-use-cases-of-apollo-mcp-based-on-42k-queries"
+    },
+    {
+      "id": 33,
+      "split": "train",
+      "should_trigger": false,
+      "query": "Find VP-level marketing leaders at SaaS companies with 200-1000 employees in the Bay Area.",
+      "based_on": "Apollo, verbatim. https://docs.apollo.io/docs/apollo-mcp",
+      "acceptable_if_loaded": "Loading is fine when the skill gives the scope line and makes no paid call."
+    },
+    {
+      "id": 34,
+      "split": "train",
+      "should_trigger": false,
+      "query": "We just closed Figma. Find 30 companies that look like Figma, then for each one, find the Head of IT or VP of Engineering.",
+      "based_on": "gtm.ai, verbatim. https://gtm.ai/guides/how-to-audience-building-in-claude",
+      "acceptable_if_loaded": "Loading is fine when the skill gives the scope line and lists no companies."
+    },
+    {
+      "id": 35,
+      "split": "train",
+      "should_trigger": false,
+      "query": "Here is a CSV of accounts from last quarter. Re-enrich the contacts, flag anyone whose role has changed, and mark records where the direct dial or email is now missing.",
+      "based_on": "ZoomInfo (fetched in fragments). https://pipeline.zoominfo.com/sales/claude-mcp-for-sales-prospecting"
+    },
+    {
+      "id": 36,
+      "split": "train",
+      "should_trigger": false,
+      "query": "Pull the full company profile for snowflake.com",
+      "based_on": "gtm.ai, verbatim. https://gtm.ai/guides/how-to-audience-building-in-claude"
+    },
+    {
+      "id": 37,
+      "split": "validation",
+      "should_trigger": false,
+      "query": "Find CROs at Series B fintechs in the UK and add them to a new list",
+      "based_on": "Amplemarket, verbatim. https://www.amplemarket.com/mcp/prompts",
+      "acceptable_if_loaded": "Loading is fine when the skill gives the scope line and makes no paid call."
+    },
+    {
+      "id": 38,
+      "split": "validation",
+      "should_trigger": false,
+      "query": "What's the email pattern at Google?",
+      "based_on": "OneWave contact-hunter, verbatim. https://github.com/OneWave-AI/claude-skills/blob/HEAD/contact-hunter/SKILL.md"
+    },
+    {
+      "id": 39,
+      "split": "validation",
+      "should_trigger": false,
+      "query": "Who do we know at Acme? Here's our LinkedIn connections export.",
+      "based_on": "Crustdata sample prompt, verbatim. https://github.com/crustdata/skills/blob/HEAD/skills/warm-path-workspace/SKILL.md"
+    },
+    {
+      "id": 40,
+      "split": "validation",
+      "should_trigger": false,
+      "query": "Which accounts should I focus on this week?",
+      "based_on": "Anthropic account-tiering trigger \"which accounts should I focus on\" plus Lusha \"what should I work on this week\". https://github.com/anthropics/knowledge-work-plugins/blob/HEAD/sales/skills/account-tiering/SKILL.md"
+    }
+  ],
+  "notes": [
+    "Queries 9 and 21 ask for an email or a phone number. The skill should load and say it fetches neither, so the agent does not reach for people-enrich (a paid lookup) on its own.",
+    "Query 16 is the request that made Codex load the skill on 18 Nov 2026 (measurements F64).",
+    "Query 13 made Codex claim to apply this skill and print 50 companies from memory (18 Nov). The scope rule and the description boundary now stop that.",
+    "Rows 22-40 (20 Nov 2026) come from vendor example prompts and published skills (research report 'Contact finding prompts users type'). based_on gives each source."
+  ]
+}

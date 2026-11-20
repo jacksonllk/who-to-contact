@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+/CLAUDE.md
+/.claude/
+/tests/fixtures/local/
+/who-to-contact/
+.DS_Store
